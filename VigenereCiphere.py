@@ -39,11 +39,11 @@ while loop_ctrl_plaintext == 0:
 
 # Use while loop for error input (key)
 while loop_ctrl_key == 0:
-    print ("it's working!")
-    loop_ctrl_key += 1
-
 
 # Let the user input the key
+    key = str (input ("Enter the key: "))
+    print ("it's working!")
+    loop_ctrl_key += 1
 # Display an error message when there's a space in key   
 # Display an error message when there's a lowercase in key
 # Convert the plaintext to its integer equivalent using ord
