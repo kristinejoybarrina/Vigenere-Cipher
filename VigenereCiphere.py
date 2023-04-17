@@ -67,11 +67,13 @@ while loop_ctrl_key == 0:
 
 print ("it's working!")
 
+# Get the character length of message and key input
+plaintext_length = len (plaintext)
+key_length = len (key)
 
-# Display an error message when there's a lowercase in key
 # Convert the plaintext to its integer equivalent using ord
 # Convert the key to its integer equivalent using ord
 # Define a function
 # Produce the ciphertext by taking result of mod 26 and adding 65
 # Call the function and display the output
-# Designing the output then displat it
+# Designing the output then display it
