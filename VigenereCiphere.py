@@ -21,7 +21,7 @@ while loop_ctrl_plaintext == 0:
     loop_ctrl_plaintext += 1   
 
 # Let the user input a message
-    plaintext = str (input ("Enter the message: " ))
+    plaintext = str (input ( Style.RESET_ALL + "Enter the message: " ))
     loop_ctrl_plaintext == 0   
 # Display an error message when there's a space in message 
     def has_space (plaintext):
@@ -37,18 +37,18 @@ while loop_ctrl_plaintext == 0:
             loop_ctrl_plaintext += 1
 
         else:
-            print ("Input the message in uppercase!\n")
+            print ("\033[1;31m" + "Input the message in uppercase!\n")
             loop_ctrl_plaintext = 0
 
     else:
-        print ("Input the message with no spaces!\n")
+        print ("\033[1;31m" + "Input the message with no spaces!\n")
         loop_ctrl_plaintext = 0
 
 # Use while loop for error input (key)
 while loop_ctrl_key == 0:
 
 # Let the user input the key
-    key = str (input ("Enter the key: "))
+    key = str (input (Style.RESET_ALL + "Enter the key: "))
 
 # Display an error message when there's a space in key   
 
@@ -65,11 +65,11 @@ while loop_ctrl_key == 0:
             loop_ctrl_key += 1
 
         else:
-            print ("Input the key in uppercase!\n") 
+            print ("\033[1;31m" + "Input the key in uppercase!\n") 
             loop_ctrl_key = 0
 
     else:
-        print ("Input the key with no spaces!\n")
+        print ("\033[1;31m" + "Input the key with no spaces!\n")
         loop_ctrl_key = 0
 
 # Get the character length of message and key input
