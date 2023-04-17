@@ -9,7 +9,7 @@ loop_ctrl_key = 0
 key_char_value = []
 plaintext_char_value = []
 
-# Use while loop for error input
+# Use while loop for error input (message)
 while loop_ctrl_plaintext == 0:
     print ("it's working!")
     loop_ctrl_plaintext += 1   
@@ -18,6 +18,20 @@ while loop_ctrl_plaintext == 0:
     plaintext = str (input ("Enter the message: " ))
     loop_ctrl_plaintext == 0   
 # Display an error message when there's a space in message 
+    def has_space (plaintext):
+        return " " in plaintext
+
+    plaintext_space = (has_space(plaintext))
+
+    if plaintext_space == False:
+        loop_ctrl_plaintext += 1
+
+    else:
+        print ("Input the message with no spaces!\n")
+        loop_ctrl_plaintext = 0
+
+print ("it's working!")
+
 # Display an error message when there's a lowercase in message
 # Let the user input the key
 # Display an error message when there's a space in key   
