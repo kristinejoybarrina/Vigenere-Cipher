@@ -73,27 +73,30 @@ key_length = len (key)
 for i in range (plaintext_length):
     plaintext_char_value.append (ord (plaintext [i]))
 print (plaintext_char_value)
-print ("it's working!")
 
 # Convert the key to its integer equivalent using ord
 for i in range (key_length):
     key_char_value. append (ord (key [i]))
 print (key_char_value)
-print ("it's working!")
 
 # Define a function called "encrypt"
 def encrypt (plaintext, key):
 
 #   Create a variable with empty strings
     ciphertext = ""
-    for i in range (len(plaintext_char_value)):
-        print ("it's working!")       
+    for i in range (len(plaintext_char_value)):  
 
-# Produce the ciphertext by taking result of mod 26 and adding 65
+#       Add numbers then take the result of mod 26
+        character_value = (plaintext_char_value [i] + key_char_value [i % key_length]) % 26
+
+#       Add 65 to get the ciphertext
+        ciphertext += chr (character_value + 65)
 
 #   Return the value
     return ciphertext
 
-# Produce the ciphertext by taking result of mod 26 and adding 65
 # Call the function and display the output
+print (encrypt(plaintext, key))
+
+
 # Designing the output then display it
