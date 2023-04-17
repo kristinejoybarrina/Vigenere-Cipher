@@ -23,6 +23,7 @@ while loop_ctrl_plaintext == 0:
 # Let the user input a message
     plaintext = str (input ( Style.RESET_ALL + "Enter the message: " ))
     loop_ctrl_plaintext == 0   
+    
 # Display an error message when there's a space in message 
     def has_space (plaintext):
         return " " in plaintext
@@ -52,6 +53,7 @@ while loop_ctrl_key == 0:
 
 # Display an error message when there's a space in key   
 
+#   use def has space function to determine if there's a space
     def has_space (key):
         return " " in key
 
