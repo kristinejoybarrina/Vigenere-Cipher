@@ -79,12 +79,10 @@ key_length = len (key)
 # Convert the plaintext to its integer equivalent using ord
 for i in range (plaintext_length):
     plaintext_char_value.append (ord (plaintext [i]))
-print (plaintext_char_value)
 
 # Convert the key to its integer equivalent using ord
 for i in range (key_length):
     key_char_value. append (ord (key [i]))
-print (key_char_value)
 
 # Define a function called "encrypt"
 def encrypt (plaintext, key):
@@ -103,7 +101,11 @@ def encrypt (plaintext, key):
     return ciphertext
 
 # Call the function and display the output
-print (encrypt(plaintext, key))
+encrypted_code = (encrypt(plaintext, key))
+
+# Displaying a notice message that the user got the code
+notice_message = Figlet (font = "standard")
+print (colored (notice_message.renderText("YOU GOT THE CIPHERTEXT"), "yellow"))
 
 
 # Designing the output then display it
