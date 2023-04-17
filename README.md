@@ -18,7 +18,7 @@ git add -A
 git commit -m ["commit message"]
 git push
 
-How to rename a commit if you want to change it?
+# How to rename a commit if you want to change it?
 
 Use these gitbash commands:
 
