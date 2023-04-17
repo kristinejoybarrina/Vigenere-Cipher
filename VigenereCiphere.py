@@ -107,5 +107,15 @@ encrypted_code = (encrypt(plaintext, key))
 notice_message = Figlet (font = "standard")
 print (colored (notice_message.renderText("YOU GOT THE CIPHERTEXT"), "yellow"))
 
+# Designing the output through tkinter
+# Create an instance tkinter window or frame
+root = Tk ()
+
+# Create the dimension of window
+root. geometry ("400x250")
+root.title ("Encrypted Code")
+
 
 # Designing the output then display it
+
+tk.mainloop()
