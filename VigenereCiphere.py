@@ -3,6 +3,13 @@
 
 # PSEUDOCODE
 
+# Import modules
+import tkinter as tk
+from tkinter import *
+from pyfiglet import Figlet
+from termcolor import colored
+from colorama import Style, Back
+
 # Initialize the variables
 loop_ctrl_plaintext = 0
 loop_ctrl_key = 0
