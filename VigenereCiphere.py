@@ -42,9 +42,24 @@ while loop_ctrl_key == 0:
 
 # Let the user input the key
     key = str (input ("Enter the key: "))
-    print ("it's working!")
-    loop_ctrl_key += 1
+
 # Display an error message when there's a space in key   
+
+    def has_space (key):
+        return " " in key
+
+    key_space = (has_space(key))
+
+    if key_space == False:
+        loop_ctrl_key += 1
+
+    else:
+        print ("Input the key with no spaces!\n")
+        loop_ctrl_key = 0
+
+print ("it's working!")
+
+
 # Display an error message when there's a lowercase in key
 # Convert the plaintext to its integer equivalent using ord
 # Convert the key to its integer equivalent using ord
