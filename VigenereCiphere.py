@@ -81,7 +81,19 @@ for i in range (key_length):
 print (key_char_value)
 print ("it's working!")
 
-# Define a function
+# Define a function called "encrypt"
+def encrypt (plaintext, key):
+
+#   Create a variable with empty strings
+    ciphertext = ""
+    for i in range (len(plaintext_char_value)):
+        print ("it's working!")       
+
+# Produce the ciphertext by taking result of mod 26 and adding 65
+
+#   Return the value
+    return ciphertext
+
 # Produce the ciphertext by taking result of mod 26 and adding 65
 # Call the function and display the output
 # Designing the output then display it
