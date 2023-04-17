@@ -10,6 +10,11 @@ key_char_value = []
 plaintext_char_value = []
 
 # Use while loop for error input
+while loop_ctrl_plaintext == 0:
+    print ("it's working!")
+    loop_ctrl_plaintext += 1   
+
+
 # Let the user input a message
 # Display an error message when there's a space in message 
 # Display an error message when there's a lowercase in message
