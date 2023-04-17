@@ -52,6 +52,14 @@ while loop_ctrl_key == 0:
 
     if key_space == False:
         loop_ctrl_key += 1
+        
+#    Display an error message when there's a lowercase in key
+        if key.isupper() == True:
+            loop_ctrl_key += 1
+
+        else:
+            print ("Input the key in uppercase!\n") 
+            loop_ctrl_key = 0
 
     else:
         print ("Input the key with no spaces!\n")
