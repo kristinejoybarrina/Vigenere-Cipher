@@ -65,13 +65,16 @@ while loop_ctrl_key == 0:
         print ("Input the key with no spaces!\n")
         loop_ctrl_key = 0
 
-print ("it's working!")
-
 # Get the character length of message and key input
 plaintext_length = len (plaintext)
 key_length = len (key)
 
 # Convert the plaintext to its integer equivalent using ord
+for i in range (plaintext_length):
+    plaintext_char_value.append (ord (plaintext [i]))
+print (plaintext_char_value)
+print ("it's working!")
+
 # Convert the key to its integer equivalent using ord
 # Define a function
 # Produce the ciphertext by taking result of mod 26 and adding 65
