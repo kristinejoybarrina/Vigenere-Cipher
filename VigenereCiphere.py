@@ -76,6 +76,11 @@ print (plaintext_char_value)
 print ("it's working!")
 
 # Convert the key to its integer equivalent using ord
+for i in range (key_length):
+    key_char_value. append (ord (key [i]))
+print (key_char_value)
+print ("it's working!")
+
 # Define a function
 # Produce the ciphertext by taking result of mod 26 and adding 65
 # Call the function and display the output
