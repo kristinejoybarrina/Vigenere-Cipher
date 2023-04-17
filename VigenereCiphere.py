@@ -4,6 +4,11 @@
 # PSEUDOCODE
 
 # Initialize the variables
+loop_ctrl_plaintext = 0
+loop_ctrl_key = 0
+key_char_value = []
+plaintext_char_value = []
+
 # Use while loop for error input
 # Let the user input a message
 # Display an error message when there's a space in message 
