@@ -11,7 +11,6 @@ plaintext_char_value = []
 
 # Use while loop for error input (message)
 while loop_ctrl_plaintext == 0:
-    print ("it's working!")
     loop_ctrl_plaintext += 1   
 
 # Let the user input a message
@@ -25,6 +24,14 @@ while loop_ctrl_plaintext == 0:
 
     if plaintext_space == False:
         loop_ctrl_plaintext += 1
+        
+#      Display an error message when there's a lowercase in message
+        if plaintext.isupper () == True:
+            loop_ctrl_plaintext += 1
+
+        else:
+            print ("Input the message in uppercase!\n")
+            loop_ctrl_plaintext = 0
 
     else:
         print ("Input the message with no spaces!\n")
@@ -32,7 +39,7 @@ while loop_ctrl_plaintext == 0:
 
 print ("it's working!")
 
-# Display an error message when there's a lowercase in message
+
 # Let the user input the key
 # Display an error message when there's a space in key   
 # Display an error message when there's a lowercase in key
