@@ -125,4 +125,7 @@ text_window.pack()
 label_window.pack ()
 button_window.pack ()
 
+# Insert the encrypted code to the window
+text_window.insert (tk.END, encrypted_code)
+
 tk.mainloop()
