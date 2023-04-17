@@ -107,7 +107,7 @@ encrypted_code = (encrypt(plaintext, key))
 notice_message = Figlet (font = "standard")
 print (colored (notice_message.renderText("YOU GOT THE CIPHERTEXT"), "yellow"))
 
-# Designing the output through tkinter
+# Designing the output through tkinter then display it
 # Create an instance tkinter window or frame
 root = Tk ()
 
@@ -115,7 +115,14 @@ root = Tk ()
 root. geometry ("400x250")
 root.title ("Encrypted Code")
 
+# Create a widget, label, and button
+text_window = Text (root, height = 10, width = 50, bg = "black", foreground = "white")
+label_window = Label (root, text = "SHHHH! Keep it as a secret!", foreground = "red", justify = CENTER, font = ("Arial", 14, "bold"))
+button_window = Button (root, text = "CLOSE", command = root.destroy)
 
-# Designing the output then display it
+# Let the pack method declares the position attributes
+text_window.pack()
+label_window.pack ()
+button_window.pack ()
 
 tk.mainloop()
